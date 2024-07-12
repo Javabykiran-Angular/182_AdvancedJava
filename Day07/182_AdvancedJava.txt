@@ -1,0 +1,48 @@
+Last Lecture Agenda
+1 Hibernate Configuration
+	
+	@Entity
+	publicclass Song{
+		@Id
+		@GertatedValue(stratgey=GenerationType.Identity)
+		int id;
+		Sting name;
+		
+		@Coloumn(name="singer")
+		String artis;
+		
+		...
+		
+	}
+	
+	main Clsss
+	
+	Configuration config =new Configuration();
+		config.configure("hibernate.cfg.xml");
+		config.addAnnotatedClass(Song.class);
+		
+		SessionFactory factory =config.buildSessionFactory();
+		
+		Session session=factory.openSession();
+		session.beginTransction();
+		
+		Song s=new Song();
+		s.setName("")
+		...
+		
+		session.persist(s);
+		session.getransaction.commit();
+		session.close();
+		
+	
+	
+summary & Interview Questions
+1 Which configuration we have to does for hibernate?
+2 Tell the Hibernate inbuilt functions
+
+Today's Lecture Agenda
+1 Hibernate functions
+
+summary & Interview Questions
+1 Which configuration we have to does for hibernate?
+2 Tell the Hibernate inbuilt functions
