@@ -1,0 +1,20 @@
+Last Lecture Agenda
+1 Hibernate functions
+1 persist => Data insert/store 
+2 merge => Update a particular record
+3 remove => to delete a particular Record 
+4 get => a particular data to be fetched 
+5 getResultList => jakatara.java pkg 
+
+summary & Interview Questions
+1 Which configuration we have to does for hibernate?
+2 Tell the Hibernate inbuilt functions
+
+Today's Lecture Agenda
+1 HQL
+	Hibernate Query lang 
+
+
+
+summary & Interview Questions
+1 What is HQL 
