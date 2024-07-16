@@ -1,0 +1,36 @@
+Last Lecture Agenda
+1 HQL
+	Hibernate Query lang 
+	1 Update 
+		update Song set name=:myname where id=:id
+		session.CreateMutationQuery(hqlquery,Song.class);
+	2 Delete 
+		delete Song where id=:id
+		....
+		session.CreateMutationQuery(hqlquery,Song.class);
+	3 Particular Record By ID  
+		from Song where id=:id
+	Query<Song> query= session.createQuery(hqlquery,Song.class);
+		query.uniqueResult();
+	 
+	 4 Get All Record 
+		from Song 
+	Query<Song> query= session.createQuery(hqlquery,Song.class);
+		query.list();
+
+summary & Interview Questions
+1 What is HQL 
+
+Today's Lecture Agenda
+1 Entity class should be Employee 
+	It contains emp name, id,salary,role,mobileno.
+
+ Task 1 => Check whether u are login successfully or not 
+	case 1 if u r valid User display msg Login Successfully
+	case 2 if u r not valid user display msg Invalid user 
+2 Perform All operation using HQL on employee entity class. 
+3 List the employee whose salary is less than 2000.
+4 List the employee whose role is developer.
+
+summary & Interview Questions
+NA
