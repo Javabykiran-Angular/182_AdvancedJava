@@ -1,0 +1,87 @@
+Last Lecture Agenda
+1 Annotation Based Configuration
+		@Bean("emp")
+		@Scope("")
+		public Employee getInstanceEMP(){
+			return (new Employee());
+		}
+2 @Bean
+3 @Component
+4 Difference Between @Bean & @Component
+5 Autowire
+6 @value 
+
+
+@Bean
+1 The @Bean annotation is used to define a bean method within a configuration class.
+2 This method returns an instance of the bean that you want to define.
+3 typically used when you want to define a bean for a class that you do not control, such as a third-party library
+4 you can create a bean instance and customize its behavior as you needed.
+5 @Bean methods can have arguments, which can be used to inject dependencies into the bean instance.
+6 @Bean Preferable for to wire components from 3rd-party libraries 
+
+
+@Component
+1 The @Component annotation is a stereotype annotation that is used to mark a class as a component.
+2 A component is a general-purpose object that is managed by the Spring IoC container.Other stereotype annotations, such as @Service, @Repository, and @Controller.
+3 typically used when you want to define a bean for a class that you create yourself and that has a simple initialization process
+4 It is provides a convenient way to register a class as a bean without having to define a separate configuration class.
+5 @Component classes typically use constructor or setter injection to inject dependencies.
+6 @Component Preferable for component scanning and automatic wiring.
+
+
+
+summary & Interview Questions
+1 How to do the Annotation Based Configuration?
+2 What is @Bean Annotation?
+3 What is @Component Annotation?
+4 Explain Difference Between @Bean & @Component
+
+
+
+Today's Lecture Agenda
+1 @Qualifier
+2 Spring AOP => Aspects orientated Programing 
+
+Spring AOP:
+	- AOP: Implementation of cross cutting concerns without modifying core BL.
+	- Pre-processing & Post-processing
+	- In JavaEE it is implemented using Filters.
+	- In Java it can be implmented using Aspect/J framework (@EnableAspectJAutoProxy,@Aspect)
+	- In Spring AOP is implemented in spring-aop package/module. It is wrapper on Aspect/J library.
+	- AOP is an approach which supports OOP
+	- AOP breaking down program logic into distinct parts so it is called concerns
+	- The functions that span multiple points of an application are called cross-cutting concerns and these cross-cutting concerns are conceptually separate from the application's business logic.
+	- e.g logging, auditing, declarative transactions, security, caching, etc.
+	- AOP is like triggers in programming languages such as Perl, .NET, Java, and others.
+	- Spring AOP module provides interceptors to intercept an application. For example, when a method is executed, you can add extra functionality before or after the method execution.
+	
+	AOP Terminology
+		- Aspect(@Aspect) 
+			An aspect is a class that implements enterprise application concerns that cut across multiple classes, such as transaction management. Aspects can be a normal class configured through Spring XML configuration or we can use Spring AspectJ integration to define a class as Aspect using @Aspect annotation. It will contain one or more advices implementations.
+		- JoinPoint
+			A join point is a specific point in the application such as method execution, exception handling, changing object variable values, etc. In Spring AOP a join point is always the execution of a method.
+			You can also say, it is the actual place in the application where an action will be taken using Spring AOP framework.
+		- Advice - (advice->What should be called)
+			Advices are actions taken for a particular join point.In terms of programming, they are methods that get executed when a certain join point with matching pointcut is reached in the application, such as filters in servlet. 
+			Advice represents an action taken by an aspect at a particular join point. There are different types of advices:
+			
+			1 @After
+				An advice that gets executed after the join point method finishes executing, whether normally or by throwing an exception, In short it work like as finally block in core java.
+			2 @Before - 
+				These advices runs before the execution of join point methods( methods you speicify)
+			3 @Arround
+				This is the most important and powerful advice. This advice surrounds the join point method and we can also choose whether to execute the join point method or not. We can write advice code that gets executed before and after the execution of the join point method.
+				Sequence- call @before->perform logic->proceed further Your joinpoint method works->@After call->perform logic->Point cut means to stop the execution of that method.
+
+
+
+summary & Interview Questions
+1 Explain Qualifier
+2 What is AOP 
+3 Explain Various AOP Aspects 
+
+
+
+
+
