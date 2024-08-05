@@ -1,0 +1,200 @@
+Last Lecture Agenda
+1 What is Database Driver?  => Tanmay, Shrisagar
+	Database driver
+	- A software that enables java application to interact with database. It is simple carrier to connect your java application to data base. Where driver is act like bridge between any application to db that store the data into database.Here 4 different Types of driver 
+
+	1 Type I --- Jdbc Odbc Bridge Driver
+			JDBC -> java database connectivity (Design by sunmicrosystem)
+			odbc -> Open database connectivity (Design by windows microsoft)
+			- Here ODBC is only windows specific os it is not used for any other OS, so it is removed support in java 7, in the previous version it has support 
+			
+	2 Type II --- JDBC - Native API 		
+		
+			- Here we avoid ODBC instead of we use vendor specific driver 
+			- In this type finally removed OS dependancy.
+			- But this vendor specific driver has to be installed on all system 
+			Partially in C & Java --- Vendor specific
+		- e.g. Oracle OCI driver -- but now outdated.
+		
+	3 Type III --- JDBC network protocol driver
+		- In this type initially we installed our API on server and that server will transform your api to client machine
+		- When someone is connected to this server through the internet a small copy of API is sending to respective client machine.
+		- Basically it is indirectly installed that API in your machine through network so it is called network protocol driver.
+		- Here Type 2 API driver is running on server and whenever you give the request to server it transform that API in your machine and installed it.
+	
+		Middleware driver
+		- e.g. WebLogic RMI driver
+		
+	4 Type IV --- Jdbc thin/Universal driver
+		- It is not used any middleware driver to connect the DB
+		- It is Two step process 
+		  1st step is Java code -> type 4 and 
+		  2nd step is type 4 to database & vice versa
+	
+		Fully in Java -- Portable -- Vendor specific
+		- e.g. MySQL Connector (mysql-connector-x.y.z.jar) , Oracle thin driver (ojdbcx.jar), Driver url is 
+			Mysql => com.mysql.cj.jdbc.Driver
+			Oracle => oracle.jdbc.OracleDriver
+
+2 Explain JDBC Steps?/ Explain JDBC Connectivity?=> Shrisagar
+1. Load & register driver class.
+			Class.ForName("com.mysql.cj.jdbc.Driver");
+			
+			static{
+			.....
+			}
+			
+			{
+				
+			}
+			
+		2. Get JDBC connection (using DriverManager).
+			jdbc:mysql://localhost:3306/emplyee, root ,root 
+		3. Create JDBC statement (SQL query).
+		4. Execute the query and collect result.
+			- SELECT ---> executeQuery() -- ResultSet (rows & cols)
+			OR
+			- Non-SELECT --> executeUpdate() -- int (affected rows).
+		5. Close all.
+
+3 what is prerequisite for MySQL Driver Connection? => Tanmay
+	1 Driver Name 
+		String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
+	2 Database url 
+		String DB_URL = "jdbc:mysql://localhost:3306/emp161db";
+	3 Database user
+		String DB_USER = "root";
+	4 Database password
+		String DB_PASSWORD = "Sumit@123";
+
+
+4 What is Maven? => Shrisagar
+- Maven is Project Management tool 
+	- It is project Management Tool
+		- It is Build Tool
+		- add required jars & their dependencies in project classpath & deployment assembly
+		- compilation of the project.
+		- testing & packaing project deployment assembly.
+		- Reporting
+	- Meaning of Maven is "Accumulator of knowledge". 
+		-Maven is in yiddish language word.
+		
+	- Maven is automation & management tool developed by Apache s/w foundation. It is based on POM (project Object Model)=> config of project
+		- basic Config : java version, spring version,maven version etc...
+		- dependencies: third party jar files to be added in project.
+		- packaging info: jar or war, name, groupId/artifactId
+		- build settings.
+		- repositories: collection of jars.
+		
+	- Maven can build project into desired output such as .jar, .war etc
+	- It is mostly used for java based project.
+	- Maven is written in java.
+	
+	Java Project Structure
+	- Source code => Developer Purpose 
+	- Test code => Tester purpose 
+	- resource (assets,files,directories)
+	- dependances/Library
+	- Configuration
+	- Task Runner (build,test,Run)
+	- Reporting
+
+5 How Maven Works 
+
+
+
+summary & Interview Questions
+NA
+
+
+Today's Lecture Agenda
+1 Web Application	
+	- It execute or run on browser is called web application.
+	- It required to execute over the network => i.e. internet 
+	- Http protocol => hyper text transfer protocol 
+	
+2 Server-client architecture
+	terminology 
+		1 client => 
+				It is send a request through the internet to server 
+				ex. browser , android application, pager 
+		2 server =>
+				It accept a request from client & process it get back to response to the client 
+		3 Request =>
+				It transfer the data using http protocol 
+		4 Response => 
+				It get the mesg from server & get back to ur client 
+		
+3 Http Request & Http Response
+	- It required internet 
+	Http Request
+		It has 2 parts 
+		1 Request Header 
+			- ip 
+			- Date 
+			- HTTP protocol version 
+			- Http method 
+			- Content Type 
+				- image 
+				- video 
+				- audio 
+				- Application json
+				- text/html 
+				- PDF 
+			- Auth Token 
+			- server address 
+		2 Request Body 
+			- Data 
+				1 json format 
+				2 text/html 
+				3 XML format (outdated)
+				
+	Http Response
+		1 Response Header 
+			- ip 
+			- Date 
+			- HTTP protocol version 
+			- Http method 
+			- Content Type 
+				- image 
+				- video 
+				- audio 
+				- Application json
+				- text/html 
+				- PDF 
+			- Auth Token 
+			- server address 
+			- Status code 
+				1 2xx => 200-299 => Success/Ok 
+				2 3xx => Redirection => 300-399
+				3 4xx => Client Error => 400-499 
+				4 5xx => Server side Error => 500-599 
+		2 Response Body 
+			Data 
+				1 json format 
+				2 text/html 
+				3 XML format (outdated)
+	
+
+Server 
+	1 Web Server 
+		- It is used for static web content 
+		- nginix, IIS 
+	2 Application Server
+		It is combination of 
+		web server + Its Additional features of that server 
+		- tomcat , IBM  websphere, 
+	
+4 Http Methods
+	1 get => It fetch a data from backend server & given to front end server 
+	2 post => To send a data from frontend server to backend server
+	3 put  => To update a particular record 
+	4 delete => To delete a particular Record 
+
+
+summary & Interview Questions
+1 What is Web Server?
+2 Explain Types of Web Server
+3 Explain Http Methods
+4 How Server-client Application Flow?
+
