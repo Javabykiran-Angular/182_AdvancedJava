@@ -1,0 +1,172 @@
+Last Lecture Agenda
+1 Web Application	
+	- It execute or run on browser is called web application.
+	- It required to execute over the network => i.e. internet 
+	- Http protocol => hyper text transfer protocol 
+	
+2 Server-client architecture
+	terminology 
+		1 client => 
+				It is send a request through the internet to server 
+				ex. browser , android application, pager 
+		2 server =>
+				It accept a request from client & process it get back to response to the client 
+		3 Request =>
+				It transfer the data using http protocol 
+		4 Response => 
+				It get the mesg from server & get back to ur client 
+		
+3 Http Request & Http Response
+	- It required internet 
+	Http Request
+		It has 2 parts 
+		1 Request Header 
+			- ip 
+			- Date 
+			- HTTP protocol version 
+			- Http method 
+			- Content Type 
+				- image 
+				- video 
+				- audio 
+				- Application json
+				- text/html 
+				- PDF 
+			- Auth Token 
+			- server address 
+		2 Request Body 
+			- Data 
+				1 json format 
+				2 text/html 
+				3 XML format (outdated)
+				
+	Http Response
+		1 Response Header 
+			- ip 
+			- Date 
+			- HTTP protocol version 
+			- Http method 
+			- Content Type 
+				- image 
+				- video 
+				- audio 
+				- Application json
+				- text/html 
+				- PDF 
+			- Auth Token 
+			- server address 
+			- Status code 
+				1 2xx => 200-299 => Success/Ok 
+				2 3xx => Redirection => 300-399
+				3 4xx => Client Error => 400-499 
+				4 5xx => Server side Error => 500-599 
+		2 Response Body 
+			Data 
+				1 json format 
+				2 text/html 
+				3 XML format (outdated)
+	
+
+Server 
+	1 Web Server 
+		- It is used for static web content 
+		- nginix, IIS 
+	2 Application Server
+		It is combination of 
+		web server + Its Additional features of that server 
+		- tomcat , IBM  websphere, 
+	
+4 Http Methods
+	1 get => It fetch a data from backend server & given to front end server 
+	2 post => To send a data from frontend server to backend server
+	3 put  => To update a particular record 
+	4 delete => To delete a particular Record 
+
+
+summary & Interview Questions
+1 What is Web Server?
+2 Explain Types of Web Server
+3 Explain Http Methods
+4 How Server-client Application Flow?
+
+
+
+Today's Lecture Agenda
+1 Json Object
+	- java script Object Notation 
+	- It is light weight Object 
+	- It is store data into Key & value format 
+	obj={
+		id:9,
+		"fname":"Sumit",
+		"lname":"Raokhande"
+	}
+	
+2 Array of Object
+	[
+		{
+			id:9,
+			"fname":"Sumit",
+			"lname":"Raokhande"
+			"country":{
+				"cid":"1",
+				"cname":"India"
+			}
+		},
+		{
+			id:3,
+			"fname":"Spruha",
+			"lname":"Raokhande",
+			"country":{
+				"cid":"1",
+				"cname":"India"
+			}
+		},
+		{
+			id:6,
+			"fname":"Kiran",
+			"lname":"Raokhande",
+			"country":{
+				"cid":"1",
+				"cname":"India"
+			}
+		}
+	]
+3 Rest Vs Soap
+	
+	+ REST 
+		- Typically REST works on top of HTTP protocol
+		- Can be accessed from any device which has internet connection.
+		- REST is lightweight (than SOAP)
+			- gives freedom -- XML or JSON -- JSON is preferred.
+			- JSON processing is lighter.
+			- JSON needs less data
+
+	+ SOAP 
+		- SOAP services gives XML data 
+		- Can be accessed & processing XML data needs more device config.
+			- XML processing is heavy
+			- XML needs more data=> It required more memory consumption
+
+	
+4 Difference between Spring & Spring Boot
+	Spring 
+ 1 Spring is Freamwork
+ 2 You have to create explicitly IOC Container
+ 3 If you work with mvc or REST API then you need to configure tomcat server by yourself.
+ 
+Spring Boot
+1 It is  tool which makes the work easier to create ready to run application.
+2 IOC Container is create automatically we don't required to create explicitly.
+3 Where as in Spring Boot it is embedded tomact server in it. It is making your life easier.
+5 Http end point URL => 
+
+localhost:8080/firstapi
+
+
+summary & Interview Questions
+1 Difference between Rest & Soap
+2 How to create Json Object
+3 How to create array of object
+4 Difference between Spring & Spring Boot.
+
