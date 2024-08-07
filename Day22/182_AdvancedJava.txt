@@ -1,0 +1,95 @@
+Last Lecture Agenda
+1 Json Object
+	- java script Object Notation 
+	- It is light weight Object 
+	- It is store data into Key & value format 
+	obj={
+		id:9,
+		"fname":"Sumit",
+		"lname":"Raokhande"
+	}
+	
+2 Array of Object
+	[
+		{
+			id:9,
+			"fname":"Sumit",
+			"lname":"Raokhande"
+			"country":{
+				"cid":"1",
+				"cname":"India"
+			}
+		},
+		{
+			id:3,
+			"fname":"Spruha",
+			"lname":"Raokhande",
+			"country":{
+				"cid":"1",
+				"cname":"India"
+			}
+		},
+		{
+			id:6,
+			"fname":"Kiran",
+			"lname":"Raokhande",
+			"country":{
+				"cid":"1",
+				"cname":"India"
+			}
+		}
+	]
+3 Rest Vs Soap
+	
+	+ REST 
+		- Typically REST works on top of HTTP protocol
+		- Can be accessed from any device which has internet connection.
+		- REST is lightweight (than SOAP)
+			- gives freedom -- XML or JSON -- JSON is preferred.
+			- JSON processing is lighter.
+			- JSON needs less data
+
+	+ SOAP 
+		- SOAP services gives XML data 
+		- Can be accessed & processing XML data needs more device config.
+			- XML processing is heavy
+			- XML needs more data=> It required more memory consumption
+
+	
+4 Difference between Spring & Spring Boot
+	Spring 
+ 1 Spring is Freamwork
+ 2 You have to create explicitly IOC Container
+ 3 If you work with mvc or REST API then you need to configure tomcat server by yourself.
+ 
+Spring Boot
+1 It is  tool which makes the work easier to create ready to run application.
+2 IOC Container is create automatically we don't required to create explicitly.
+3 Where as in Spring Boot it is embedded tomact server in it. It is making your life easier.
+5 Http end point URL => 
+
+localhost:8080/firstapi
+
+
+summary & Interview Questions
+1 Difference between Rest & Soap
+2 How to create Json Object
+3 How to create array of object
+4 Difference between Spring & Spring Boot.
+
+
+
+
+Today's Lecture Agenda
+1 Request Mapping 
+2 Postman
+3 GetMapping
+4 PostMapping
+5 put Mapping => @PutMapping
+6 delete mapping => @DeleteMapping
+
+summary & Interview Questions
+1 Which parameter is used in request mapping
+2 What is runner main class in spring boot what annotation you use in it?
+3 What is runner main class in spring boot what annotation you use in it?
+
