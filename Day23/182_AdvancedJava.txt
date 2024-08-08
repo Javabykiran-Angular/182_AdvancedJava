@@ -1,0 +1,41 @@
+Last Lecture Agenda
+1 Request Mapping 
+	@RequestMapping(value="firstname",method=RequestMethod.post)
+	public String firstapi(@RequestBody Employee emp){
+		...
+	}
+	
+	@RequestMapping(value="firstname/{id}",method=RequestMethod.put)
+	public String firstapi(@RequestBody Employee emp,@PathVariable int id){
+		...
+	}
+2 Postman
+	body tab => raw=> json 
+	{
+		"name":"sumit",
+		"mobileno":"..."
+	}
+3 GetMapping
+	@GetMapping 
+4 PostMapping
+	@PostMapping
+5 put Mapping => @PutMapping
+6 delete mapping => @DeleteMapping
+
+summary & Interview Questions
+1 Which parameter is used in request mapping
+2 What is runner main class in spring boot what annotation you use in it?
+
+
+Today's Lecture Agenda
+1 Request Param => query selector/parameter => url rewriting 
+	- Its data is in encoded format 
+2 Database Intergration 
+
+summary & Interview Questions
+1 Explain the Steps to store data into database
+2 Where to set database configuration in spring boot 
+3 How to do curd operations in spring boot 
+
+
+
