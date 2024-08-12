@@ -1,0 +1,29 @@
+Last Lecture Agenda
+1 Request Param => query selector/parameter => url rewriting 
+	- Its data is in encoded format 
+	
+	@GetMapping("...")
+	public Srtring getData(@RequestParam int id){
+	....
+	}
+	
+2 Database Intergration 
+	application.properties
+	
+3 Post Mapping
+
+summary & Interview Questions
+1 Explain the Steps to store data into database
+2 Where to set database configuration in spring boot 
+3 How to do curd operations in spring boot 
+
+Today's Lecture Agenda
+1 GetMapping
+2 put Mapping 
+3 Delete mapping
+
+summary & Interview Questions
+1 How to do the curd operation 
+
+
+
