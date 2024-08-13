@@ -1,0 +1,35 @@
+Last Lecture Agenda
+1 GetMapping
+	@GetMapping("..")
+	public List<Person> getAllRecord(){
+	...
+	}
+	dao 
+	String hqlquery="from Person";
+	Query<Person> query= session.createQuery(hqlquery,Person.class);
+	List<Person> list= query.list();
+2 put Mapping 
+	@Putmapping("/update/{id}")
+	=> @PathVariable 
+	=> @RequestBody 
+	dao 
+		Person persopn= session.get(Person.class,id)
+		...
+		session.merge(persopn);
+		
+3 Delete mapping
+	
+
+summary & Interview Questions
+1 How to do the curd operation 
+
+Today's Lecture Agenda
+1 Get particular Record
+2 Login API 
+
+summary & Interview Questions
+1 How to get particular Record 
+2 Design Login API 
+
+
+
