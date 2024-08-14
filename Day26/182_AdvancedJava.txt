@@ -1,0 +1,75 @@
+Last Lecture Agenda
+1 Get particular Record
+	@Getmapping("getbyId/{id}")
+	public Person getRecordById(@PathVariable int id){
+		..
+	}
+	dao.java
+	
+	Person p= session.get(Person.class,id)
+	
+	dao.java 
+	String hqlQuery="from Person where emailid=:myemailid";
+	Query<Person> query= session.createQuery(hqlQuery,Person.class);
+	query.setparameter("myemailid",emailid);
+	Person p= query.uniqueResult();
+	
+	
+2 Login API 
+	{
+		"emailid":..,
+		"mobileno":...
+	}
+	
+	@Postmapping("login")
+	public String login(@RequestBody Person p){
+		..
+	}
+	dao.java 
+	hqlQuery="from Person where emailid=:myemailid and monileno=:no"
+	...
+	Person p= query.uniqueResult();
+	
+	
+
+summary & Interview Questions
+1 How to get particular Record 
+2 Design Login API 
+
+Today's Lecture Agenda
+1 Spring Project as per Industry
+2 organization Management Workflow
+	- we have to create 2 entity class 
+	- 1 Employee
+			1 id 
+			2 name 
+			3 mobileno 
+			4 emailid 
+			5 department
+			6 salary
+			7 status => Active/Inactive/Suspend
+			8 createdDate
+			9 createdBy 
+			10 updatedDate
+			11 UpdatedBy 
+			12 Country => Object => Mapping=>  many To One 
+			
+ 	  2 Country
+			- cid 
+			- cname 
+		For Country class => API 
+		1 addCountry
+		2 UpdateContry
+		3 deleteCountry
+		4 AllCountryRecord
+		5 getParticular record 
+		
+
+
+
+summary & Interview Questions
+1 Which standard we have to follow while industry coding?
+2 How to Explain Project?
+
+
+
