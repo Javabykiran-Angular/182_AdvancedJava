@@ -1,0 +1,75 @@
+Last Lecture Agenda
+1 What is Database Driver? Pragati 
+2 Explain JDBC Steps?/ Explain JDBC Connectivity? Shreesagar
+3 Difference Between Statement & Prepared Statement? Pragati
+		Statement
+	1 At the time of creating statement object, we are not required to provide any query, so that means Statement Object is not associated with any query & we can use multiple queries
+	2 Whenever we are using execute method every time Query will be compile & execute.
+	3 Statement object can work for only static queries.
+	4 Relatively performance is low.
+	5 Best choice to use Statement if we want to work with multiple queries.
+	6 There may be a possibilty of SQL injection attack.
+	7 Inserting date and large object (clob & blob) is difficult.
+	
+PreparedStatement
+		1 At the time of creating PreparedStatement object, we are to required to provide SQl query. So It is associated with only one query.
+		2 It compiled only onces while getting Object of PreparedStatement.
+		3 Whenever we are using execute method query never compiled. it just will be executed
+		4 PreparedStatement object can work both static and dynamic queries.
+		5 Relatively performance is high.
+		6 Best choice to use PreparedStatement if we want to work with only one query but required to execute multiple times.
+		7 There is no possibilty of SQL injection attack.
+		8 Inserting date and large object (clob & blob) is easy.
+
+4 What is Server? 
+  Ans - explain how request & response execute 
+	Explain the types 
+	1 H/w Server- physical Machine(It has one or more S/W server run with differentiate using port)
+
+	2 S/W Server
+		1 Web Server 
+	  - It is used for static web content 
+		- nginix, IIS 
+		- Web Server- IIS (Microsoft),Glassfish (sun Microsystem),Tomcat server(Apache), Jetty
+	2 Application Server
+		It is combination of 
+		web server + Its Additional features of that server 
+		- tomcat , IBM  websphere, 
+		- Application Server- mysql, Angular server,Oracle server weblogic,Jboss (Red Hat),IBM WebSphere
+		- one port has one application only. 
+			
+   
+	
+	
+5 Explain Http Methods? Pragati
+
+6 What is difference between Get and Post method?
+	Get -
+1) Limited amount of data can be sent 
+2) Not Secured because data is exposed in URL bar.
+3) we can send as well as get a data 
+4) It is not reliable for sending a data for backend 
+5) It is used to fetch a data from backend server 
+Post
+1) Large amount of data can be sent because data is sent in Http body.
+2) Secured because data is not exposed in URL bar.
+3) we can send data from frontend to backend only 
+4) It is reliable for sending a data for backend 
+5) It is used to send data from front-end
+
+
+7 What is Hibernate?
+8 What is JPA?
+
+
+Today's Lecture Agenda
+1 update country 
+2 delete country
+3 get particular record 
+4 get all record 
+
+
+summary & Interview Questions
+1 Which standard we have to follow while industry coding?
+
+
