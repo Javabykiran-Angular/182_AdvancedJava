@@ -1,0 +1,30 @@
+Last Lecture Agenda
+1  Employee => entity
+
+			1 id 
+			2 name 
+			3 mobileno 
+			4 emailid 
+			5 department
+			6 salary
+			7 status => Active/Inactive/Suspend
+			8 createdDate
+			9 createdBy 
+			10 updatedDate
+			11 UpdatedBy 
+			12 Country => Object => Mapping=>  many To One 
+
+2 Use Lombok Lib 
+
+summary & Interview Questions
+1 Which standard we have to follow while industry coding?
+2 What is Use of Lombok?
+
+
+
+Today's Lecture Agenda
+1 Project Continue
+2 @CrossOrigin
+
+summary & Interview Questions
+1 What is cross origin?
