@@ -1,0 +1,29 @@
+Last Lecture Agenda
+1  Project Continue
+	updateEmp
+	DeleteEmp
+	getAllEmp
+	getParticularEmp
+	login
+	
+2 @CrossOrigin
+	
+
+summary & Interview Questions
+1 What is cross origin?
+
+Today's Lecture Agenda
+1 Complete The Task 
+2 Get all employee whose salary range is 1000 to 5000 
+3 get all employee whose status is either active/inactive/suspend
+4 Update only status of particular employee 
+ case 1 if employee status is active change to inactive 
+ case 2 if employee status is inactive change to active
+ case 3 if employee status is suspend do not change its status 
+ I want response in message format 
+	for case 1 & 2 => status change successfully
+	for case 3 => suspended employee does not change status 
+ 
+
+summary & Interview Questions
+NA 
