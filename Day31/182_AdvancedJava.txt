@@ -1,0 +1,64 @@
+Last Lecture Agenda
+1 Complete The Task 
+2 Get all employee whose salary range is 1000 to 5000 
+3 get all employee whose status is either active/inactive/suspend
+4 Update only status of particular employee 
+ case 1 if employee status is active change to inactive 
+ case 2 if employee status is inactive change to active
+ case 3 if employee status is suspend do not change its status 
+ I want response in message format 
+	for case 1 & 2 => status change successfully
+	for case 3 => suspended employee does not change status 
+ 
+
+summary & Interview Questions
+NA 
+
+Today's Lecture Agenda
+1 Spring MVC
+	- m => Model=> data => entity class  , V= > View/Template , C=> controller
+2 What is MVC
+- MVC -- Design pattern -- Common in enterprise web apps.
+	- MVC using JSP, Java Beans & Servlet Controller:
+		+ M - Model: -- Java Bean.
+			- POJOs + Data Handling
+			- POJO class (user defined)
+			- Data carrier -- Typically doesn't have BL or DB connectivity.
+		+ V - View: -- Web page (html, jsp, ...) (user defined)
+			- Data Represenation
+		+ C - Controller: -- Servlet.
+			- Navigation, Coupling betn Models & Views.
+			- It has two types: Front Controller & Controller(s)
+			1 Front Controller: (spring mvc framework)
+				- org.springframework.web.servlet.DispatcherServlet
+				- create spring application context (WebApplicationContext).
+					
+					- maps the incoming req to corresponding req handling method.
+					- getting req data from incoming req & injecting it into req handling method (as arg) -- as primitive types or model object.
+					- provide validation facilties.
+					- navigating to the next web component (view or another req handler method).
+					- transferring data from req handler method to the view.
+					- making state management/security/localization objects available into req handler.
+			2 Controller(s): (user defined) 
+				- implementation of req handler methods.
+	- WebApplicationContext:
+		- Each spring web appln needs at least one WebApplicationContext.
+		- In simple spring mvc web application, the dispatcher servlet is responsible for creating spring webapplicationcontext. This context is responsible for MVC as well as DI.
+
+3 Difference between Spring & Spring Boot 
+Spring 
+ 1 Spring is Freamwork
+ 2 You have to create explicitly IOC Container
+ 3 If you work with mvc or REST API then you need to configure tomcat server by yourself.
+ 
+Spring Boot
+1 It is  tool which makes the work easier to create ready to run application.
+2 IOC Container is create automatically we don't required to create explicitly.
+3 Where as in Spring Boot it is embedded tomact server in it. It is making your life easier.
+
+4 How to implement MVC 
+
+summary & Interview Questions
+1 What is MVC
+2 How to implement MVC 
+3 What is Spring MVC
