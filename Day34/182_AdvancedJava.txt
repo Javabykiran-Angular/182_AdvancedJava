@@ -1,0 +1,28 @@
+Last Lecture Agenda
+1 Continue MVC 
+2 Overview Of Bootstrap
+	- It makes ur application attractive
+	- It used to create responsive web page 
+	- It provides template css classes 
+	- U can use bootstrap in 2 ways 
+	 1 Online intergration 
+		27*7 internet 
+		CDN Link 
+		
+	 2 offline intergration
+	 
+	 @PostMapping("login")
+	 public void login(@ModelAttribute User user){
+		...
+	 }
+
+summary & Interview Questions
+1 How to integrate MVC with DB
+
+
+Today's Lecture Agenda
+1 Continue MVC 
+
+
+summary & Interview Questions
+1 How to integrate MVC with DB
