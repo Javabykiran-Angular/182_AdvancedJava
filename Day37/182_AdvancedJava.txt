@@ -1,0 +1,22 @@
+Last Lecture Agenda
+1 Response Writer 
+2 Send Response 
+3 Database Integration
+	PrintWriter pw= response.getWriter();
+	pw.print("...")
+	pw.write("..");
+	pw.write("<html><head><...></head><body> <h2>...</h2></body></html>")
+
+summary & Interview Questions
+1 How to do DB Integration
+2 How to send response?
+
+Today's Lecture Agenda
+1 Servlet + JSP continue
+2 Request Dispacther
+	1 forward(request,response)
+	2 include(request,response)
+	
+
+summary & Interview Questions
+1 How we can use MVC with servlet-Jsp
